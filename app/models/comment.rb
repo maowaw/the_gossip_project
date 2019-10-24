@@ -5,5 +5,8 @@ class Comment < ApplicationRecord
 
 	has_many :likes
 
+#Pour permettre le commentaire de commentaires on rajoute :
+  belongs_to :commentable, polymorphic: true, optional: true
+
 
 end

@@ -37,7 +37,7 @@ end
 end
 
 30.times do
-	Comment.create!(content:Faker::Movies::Lebowski.quote, user: User.all.sample, gossip: Gossip.all.sample)
+	Comment.create!(content:Faker::Movies::Lebowski.quote, user: User.all.sample, gossip: Gossip.all.sample, commentable_type: Faker::Quotes::Shakespeare.hamlet_quote)
 end
 
 20.times do
